@@ -1,24 +1,18 @@
-body {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-}
-
+/* Reset styles */
 h1,
 h2,
 h3,
 h4,
+h5,
+h6,
 p {
   margin: 0;
 }
 
-img {
-  display: block;
-  /* width: 100%;
-  overflow: auto; */
-}
-
-button {
-  cursor: pointer;
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .link {
@@ -27,21 +21,111 @@ button {
 
 .list {
   list-style: none;
-  margin: 0;
-  padding: 0;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
 }
 
 /* ---------------------- */
 
+:root {
+  --primary-text-color: #ffffff;
+  --main-bg-color: #fafafa;
+  --primary-bg-color: #ffffff;
+  --secondary-text-color: #111111;
+  --acent-text-color: #fd9222;
+  --secondary-bg-color: #1e1823;
+  --primary-btn-bg-color: #fd9222;
+  --secondary-btn-bg-color: #1e1823;
+  --hover-btn-bg-color: #fcf1e0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+
+  background-color: var(--main-bg-color);
+}
+
 .container {
+  min-width: 320px;
+  max-width: 375px;
+  margin: 0 auto;
+
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* ---------------------- */
+
+/* .container {
   max-width: 1200px;
   padding: 0 16px;
   margin: 0 auto;
-  /* outline: 1px solid red; */
-}
+  outline: 1px solid red;
+} */
 
 .review-section {
-  padding: 72px;
+  padding: 72px 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .review-section {
+    padding: 100px 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .review-section {
+    padding: 128px 0;
+  }
 }
 
 .review-header {
@@ -54,7 +138,7 @@ button {
   letter-spacing: -0.03em;
   text-transform: uppercase;
 
-  color: #fd9222;
+  color: var(--acent-text-color);
 }
 
 @media only screen and (min-width: 768px) {
@@ -67,7 +151,7 @@ button {
 }
 
 .review-header-span {
-  color: #111111;
+  color: var(--secondary-text-color);
 }
 
 .review-list {
@@ -86,7 +170,7 @@ button {
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1200px) {
   .review-list {
     gap: 28px;
   }
@@ -97,7 +181,7 @@ button {
   width: 335px;
   height: 200px;
 
-  background: #ffffff;
+  background: var(--primary-bg-color);
   border: 1px solid rgba(17, 17, 17, 0.1);
   box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
   border-radius: 15px;
@@ -119,6 +203,7 @@ button {
   position: absolute;
   left: 0px;
   top: -42px;
+  margin: 0 auto;
 }
 
 .review-img {
@@ -134,7 +219,7 @@ button {
   line-height: 1.33;
   text-align: center;
 
-  color: #111111;
+  color: var(--secondary-text-color);
 }
 
 .review-text {
@@ -157,8 +242,8 @@ button {
   min-width: 165px;
   height: 41px;
 
-  background: #fafafa;
-  border: 1px solid #fd9222;
+  background: var(--main-bg-color);
+  border: 1px solid var(--acent-text-color);
   border-radius: 100px;
 
   font-weight: 600;
@@ -166,15 +251,24 @@ button {
   line-height: 1.21;
   text-align: center;
 
-  color: #111111;
+  color: var(--secondary-text-color);
 }
 
 @media only screen and (min-width: 768px) {
   .review-btn {
-    font-size: 18px;
-    line-height: 1.22;
+    padding: 14px 40px;
 
     min-width: 222px;
     height: 50px;
+
+    font-size: 18px;
+    line-height: 1.22;
   }
+}
+
+.review-btn:hover,
+.review-btn:focus {
+  background: var(--primary-btn-bg-color);
+  border: none;
+  color: var(--hover-btn-bg-color);
 }

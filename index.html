@@ -8,93 +8,165 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet" />
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
       integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer" />
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>SIMPLY CHOCOLATE</title>
   </head>
   <body>
     <section class="review-section">
       <div class="container">
-        <h2 class="review-header">chocolate <span class="review-header-span">is loved</span></h2>
+        <h2 class="review-header">
+          chocolate <span class="review-header-span">is loved</span>
+        </h2>
         <ul class="review-list list">
           <li class="review-item">
             <div class="review-block">
-              <img class="review-img" src="./img/review/photo-victoria-dobrzhanska.jpg" alt="Photo Victoria Dobrzhanska" width="80" height="80" />
+              <img
+                class="review-img"
+                srcset="
+                  ./img/review/photo_victoria_dobrzhanska_@1x.png 1x,
+                  ./img/review/photo_victoria_dobrzhanska_@2x.png 2x
+                "
+                src="./img/review/photo_victoria_dobrzhanska_@1x.png"
+                alt="Photo Victoria Dobrzhanska"
+                width="80"
+                height="80"
+              />
               <h3 class="review-name">Victoria Dobrzhanska</h3>
-              <p class="review-text">I love this chocolate bar. Perfect combination of light crispy wafer, covered in a thin layer chocolate.</p>
-            </div>
-          </li>
-          <li class="review-item">
-            <div class="review-block">
-              <img class="review-img" src="./img/review/photo-nazar-babenko.jpg" alt="Photo Victoria Dobrzhanska" width="80" height="80" />
-              <h3 class="review-name">Nazar Babenko</h3>
               <p class="review-text">
-                This chocolate confection is a delight! A delight! The wafer is light and crisp, the hazelnut cream is smooth, and the chocolate is
-                good.
+                I love this chocolate bar. Perfect combination of light crispy
+                wafer, covered in a thin layer chocolate.
               </p>
             </div>
           </li>
           <li class="review-item">
             <div class="review-block">
-              <img class="review-img" src="./img/review/photo-olena-kampusch.jpg" alt="Photo Victoria Dobrzhanska" width="80" height="80" />
+              <img
+                class="review-img"
+                srcset="
+                  ./img/review/photo-nazar-babenko_@1x.png 1x,
+                  ./img/review/photo-nazar-babenko_@2x.png 2x
+                "
+                src="./img/review/photo-nazar-babenko_@1x.png"
+                alt="Photo Nazar Babenko"
+                width="80"
+                height="80"
+              />
+              <h3 class="review-name">Nazar Babenko</h3>
+              <p class="review-text">
+                This chocolate confection is a delight! A delight! The wafer is
+                light and crisp, the hazelnut cream is smooth, and the chocolate
+                is good.
+              </p>
+            </div>
+          </li>
+          <li class="review-item">
+            <div class="review-block">
+              <img
+                class="review-img"
+                srcset="
+                  ./img/review/photo-olena-kampusch_@1x.png 1x,
+                  ./img/review/photo-olena-kampusch_@2x.png 2x
+                "
+                src="./img/review/photo-olena-kampusch_@1x.png"
+                alt="Photo Olena Kampusch"
+                width="80"
+                height="80"
+              />
               <h3 class="review-name">Olena Kampusch</h3>
               <p class="review-text">
-                Chocolate is a family favourite treat. Love the delicious smooth chocolate and the creaminess inside. The wafer is soft but crunchy.
+                Chocolate is a family favourite treat. Love the delicious smooth
+                chocolate and the creaminess inside. The wafer is soft but
+                crunchy.
               </p>
             </div>
           </li>
         </ul>
-        <button type="button" class="review-btn btn" data-modal-open>Leave a review</button>
+        <button type="button" class="review-btn btn" data-modal-open>
+          Leave a review
+        </button>
       </div>
     </section>
 
-    <div class="backdrop" data-modal>
-      <!-- <div class="backdrop is-hidden" data-modal> -->
+    <div class="backdrop is-hidden" data-modal>
       <div class="review-modal">
         <button type="button" class="modal-close" data-modal-close>
-          <!-- <svg class="modal-close-icon" width="24" height="24">
-        <use href="./img/icons.svg#"></use>
-      </svg> -->
-          <img class="modal-close-icon" width="24" height="24" src="./img/review/x-close.svg" alt="" />
+          <svg class="modal-close-icon" width="24" height="24">
+            <use href="./img/icons.svg#icon-close"></use>
+          </svg>
+          <!-- <img
+            class="modal-close-icon"
+            width="24"
+            height="24"
+            src="./img/review/x-close.svg"
+            alt=""
+          /> -->
         </button>
-        <h2 class="review-modal-header">leave a review about <span class="review-modal-header-span">our chocolate</span></h2>
+        <h2 class="review-modal-header">
+          leave a review about
+          <span class="review-modal-header-span">our chocolate</span>
+        </h2>
         <form name="review-form">
           <div class="review-modal-input-group">
             <div class="review-input">
               <p class="review-input-text">Name</p>
               <label class="review-modal-label">
-                <input type="text" name="user_name" class="review-modal-input" />
+                <input
+                  type="text"
+                  name="user_name"
+                  class="review-modal-input"
+                />
               </label>
             </div>
             <div class="review-input">
               <p class="review-input-text">Enter your email</p>
               <label class="review-modal-label">
-                <input type="email" name="user_email" class="review-modal-input" />
+                <input
+                  type="email"
+                  name="user_email"
+                  class="review-modal-input"
+                />
               </label>
             </div>
             <div class="review-input">
               <div class="review-phone">
-                <!-- <svg class="modal-phone-icon" width="24" height="24">
-                <use href="./img/icons.svg#"></use>
-              </svg> -->
-                <img class="modal-phone-icon" width="24" height="24" src="./img/review/flag-icon.svg" alt="" />
+                <svg class="modal-phone-icon" width="24" height="24">
+                  <use href="./img/icons.svg#flag"></use>
+                </svg>
+                <!-- <img
+                  class="modal-phone-icon"
+                  width="24"
+                  height="24"
+                  src="./img/review/flag-icon.svg"
+                  alt=""
+                /> -->
                 <p class="phone-text">+380</p>
               </div>
               <p class="review-input-text phone">Phone number</p>
               <label class="review-modal-label">
-                <input type="tel" name="user_phone" class="review-modal-input" />
+                <input
+                  type="tel"
+                  name="user_phone"
+                  class="review-modal-input"
+                />
               </label>
             </div>
             <div class="review-input">
               <p class="review-input-text">Enter text</p>
               <label class="review-modal-label">
-                <textarea name="user_comment" class="review-modal-input-comment" rows="3"></textarea>
+                <textarea
+                  name="user_comment"
+                  class="review-modal-input-comment"
+                  rows="3"
+                ></textarea>
               </label>
             </div>
           </div>

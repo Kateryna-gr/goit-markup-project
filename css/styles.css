@@ -189,9 +189,21 @@ body {
   border-radius: 15px;
 }
 
+@media only screen and (max-width: 767px) {
+  .review-item:nth-child(n + 2) {
+    display: none;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .review-item {
     width: 344px;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .review-item:nth-child(n + 3) {
+    display: none;
   }
 }
 
@@ -204,8 +216,8 @@ body {
 .review-block {
   position: absolute;
   left: 0px;
+  right: 0;
   top: -42px;
-  margin: 0 auto;
 }
 
 .review-img {
@@ -343,6 +355,7 @@ body {
 }
 
 .modal-close-icon {
+  stroke: var(--secondary-text-color);
 }
 
 .review-modal-header {

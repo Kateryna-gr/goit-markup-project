@@ -306,15 +306,6 @@ body {
   gap: 13px;
 }
 
-.swiper-pagination-bullet-active {
-  width: 28px;
-  height: 13px;
-
-  opacity: 1;
-  border-radius: 13px;
-  background: #fd9222;
-}
-
 .swiper-pagination-bullet {
   width: 13px;
   height: 13px;
@@ -322,6 +313,15 @@ body {
   opacity: 1;
   border-radius: 13px;
   background: rgba(17, 17, 17, 0.1);
+}
+
+.swiper-pagination-bullet-active {
+  width: 28px;
+  height: 13px;
+
+  opacity: 1;
+  border-radius: 13px;
+  background: #fd9222;
 }
 
 /* Modal Window */

@@ -10,6 +10,11 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -90,6 +95,18 @@
             </div>
           </li>
         </ul>
+
+        <div class="swiper">
+          <div class="swiper-wrapper-pagination">
+            <div class="swiper-pagination">
+              <span class="swiper-pagination-bullet-active"></span>
+              <span class="swiper-pagination-bullet"></span>
+              <span class="swiper-pagination-bullet"></span>
+              <span class="swiper-pagination-bullet"></span>
+            </div>
+          </div>
+        </div>
+
         <button type="button" class="review-btn btn" data-modal-open>
           Leave a review
         </button>
@@ -175,6 +192,14 @@
       </div>
     </div>
 
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./js/modal-review.js"></script>
   </body>
 </html>

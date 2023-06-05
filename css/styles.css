@@ -680,6 +680,7 @@ body {
 /* Swiper Slider */
 
 .swiper {
+  padding-top: 42px;
   width: 360px;
 }
 
@@ -704,6 +705,7 @@ body {
 
 .swiper-pagination {
   display: flex;
+  justify-content: center;
   gap: 13px;
 }
 

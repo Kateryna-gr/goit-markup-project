@@ -211,7 +211,7 @@
             </p>
           </li>
         </div>
-        <div class="swiper-slide">
+        <div class="swiper-slide swiper-slide-active">
           <li class="review-item">
             <img
               class="review-img"
@@ -260,7 +260,9 @@
             class="swiper-pagination-bullet swiper-pagination-bullet-active"
             aria-current="true"
           ></span>
-          <span class="swiper-pagination-bullet"></span>
+          <span
+            class="swiper-pagination-bullet swiper-pagination-bullet-active"
+          ></span>
           <span class="swiper-pagination-bullet"></span>
           <span class="swiper-pagination-bullet"></span>
         </div>
@@ -268,15 +270,7 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-          loop: true,
-        },
-      });
-    </script>
+    <script src="./js/swiper.js"></script>
 
     <script src="./js/modal-review.js"></script>
   </body>

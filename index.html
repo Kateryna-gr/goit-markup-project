@@ -8,25 +8,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
       integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+      referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>SIMPLY CHOCOLATE</title>
   </head>
   <body>
-    <section class="review-section">
+    <!-- <section class="review-section">
       <div class="container">
         <h2 class="review-header">
           chocolate <span class="review-header-span">is loved</span>
@@ -101,16 +96,108 @@
           </div>
         </div>
 
-        <button type="button" class="review-btn btn" data-modal-open>
+        <button type="button" class="review-btn btn" data-second-modal-open>
           Leave a review
         </button>
+      </div>
+    </section> -->
+
+    <section class="review-section">
+      <div class="container">
+        <h2 class="review-header">chocolate <span class="review-header-span">is loved</span></h2>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="review-item swiper-slide swiper-slide-active">
+              <img
+                class="review-img"
+                srcset="./img/review/photo_victoria_dobrzhanska_@1x.png 1x, ./img/review/photo_victoria_dobrzhanska_@2x.png 2x"
+                src="./img/review/photo_victoria_dobrzhanska_@1x.png"
+                alt="Photo Victoria Dobrzhanska"
+                width="80"
+                height="80" />
+              <h3 class="review-name">Victoria Dobrzhanska</h3>
+              <p class="review-text">I love this chocolate bar. Perfect combination of light crispy wafer, covered in a thin layer chocolate.</p>
+            </div>
+            <div class="review-item swiper-slide">
+              <img
+                class="review-img"
+                srcset="./img/review/photo-nazar-babenko_@1x.png 1x, ./img/review/photo-nazar-babenko_@2x.png 2x"
+                src="./img/review/photo-nazar-babenko_@1x.png"
+                alt="Photo Nazar Babenko"
+                width="80"
+                height="80" />
+              <h3 class="review-name">Nazar Babenko</h3>
+              <p class="review-text">
+                This chocolate confection is a delight! A delight! The wafer is light and crisp, the hazelnut cream is smooth, and the chocolate is
+                good.
+              </p>
+            </div>
+            <div class="review-item swiper-slide">
+              <img
+                class="review-img"
+                srcset="./img/review/photo-olena-kampusch_@1x.png 1x, ./img/review/photo-olena-kampusch_@2x.png 2x"
+                src="./img/review/photo-olena-kampusch_@1x.png"
+                alt="Photo Olena Kampusch"
+                width="80"
+                height="80" />
+              <h3 class="review-name">Olena Kampusch</h3>
+              <p class="review-text">
+                Chocolate is a family favourite treat. Love the delicious smooth chocolate and the creaminess inside. The wafer is soft but crunchy.
+              </p>
+            </div>
+            <div class="review-item swiper-slide">
+              <img
+                class="review-img"
+                srcset="./img/review/photo_natalia_sus_@1x.png 1x, ./img/review/photo_natalia_sus_@2x.png 2x"
+                src="./img/review/photo_natalia_sus_@1x.png"
+                alt="Photo Natalia Sus"
+                width="80"
+                height="80" />
+              <h3 class="review-name">Natalia Sus</h3>
+              <p class="review-text">
+                The chocolate assortment was delicious. Both dark and milk chocolate pieces were smooth and just right on the sweetness level.
+              </p>
+            </div>
+            <div class="review-item swiper-slide">
+              <img
+                class="review-img"
+                srcset="./img/review/photo_danilo_nottingham_@1x.png 1x, ./img/review/photo_danilo_nottingham_@2x.png 2x"
+                src="./img/review/photo_danilo_nottingham_@1x.png"
+                alt="Photo Danilo Nottingham"
+                width="80"
+                height="80" />
+              <h3 class="review-name">Danilo Nottingham</h3>
+              <p class="review-text">
+                This is delicious. It so rich and flavorful you don't need to use as many. I love topping an apple with almond butter and these chips
+                for a snack.
+              </p>
+            </div>
+            <div class="review-item swiper-slide">
+              <img
+                class="review-img"
+                srcset="./img/review/photo_irina_tydnyuk_@1x.png 1x, ./img/review/photo_irina_tydnyuk_@2x.png 2x"
+                src="./img/review/photo_irina_tydnyuk_@1x.png"
+                alt="Photo Irina Tydnyuk"
+                width="80"
+                height="80" />
+              <h3 class="review-name">Irina Tydnyuk</h3>
+              <p class="review-text">
+                This is simply the best chocolate around, and I'm just thrilled to support a local company! Best local chocolate - world class :&rpar;
+              </p>
+            </div>
+          </div>
+
+          <div class="swiper-pagination swiper-wrapper-pagination"></div>
+        </div>
+
+        <button type="button" class="review-btn" data-second-modal-open>Leave a review</button>
       </div>
     </section>
 
     <!-- <div class="backdrop" data-modal> -->
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-second-modal>
       <div class="review-modal">
-        <button type="button" class="modal-close" data-modal-close>
+        <button type="button" class="modal-close" data-second-modal-close>
           <svg class="modal-close-icon" width="24" height="24">
             <use href="./img/icons.svg#icon-close"></use>
           </svg>
@@ -131,8 +218,7 @@
                 placeholder="Name"
                 required
                 pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
-                title="Enter your name: two words separated by space"
-              />
+                title="Enter your name: two words separated by space" />
             </label>
             <!-- </div> -->
             <!-- <div class="review-wrap"> -->
@@ -143,8 +229,7 @@
                 name="user_email"
                 class="review-modal-input"
                 placeholder="Enter your email"
-                title="Enter your email: example@mail.com"
-              />
+                title="Enter your email: example@mail.com" />
             </label>
             <!-- </div> -->
             <div class="review-wrap">
@@ -165,8 +250,7 @@
                   pattern="^[0-9]+$"
                   minlength="9"
                   maxlength="9"
-                  title="Enter your phone number without +380"
-                />
+                  title="Enter your phone number without +380" />
               </label>
             </div>
             <!-- <div class="review-wrap"> -->
@@ -178,8 +262,7 @@
                 rows="3"
                 placeholder="Enter text"
                 required
-                title="Type your review about our chocolate"
-              ></textarea>
+                title="Type your review about our chocolate"></textarea>
             </label>
             <!-- </div> -->
           </div>
@@ -187,146 +270,6 @@
         </form>
       </div>
     </div>
-
-    <section class="review-section">
-      <div class="container">
-        <h2 class="review-header">
-          chocolate <span class="review-header-span">is loved</span>
-        </h2>
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="review-item swiper-slide swiper-slide-active">
-              <img
-                class="review-img"
-                srcset="
-                  ./img/review/photo_victoria_dobrzhanska_@1x.png 1x,
-                  ./img/review/photo_victoria_dobrzhanska_@2x.png 2x
-                "
-                src="./img/review/photo_victoria_dobrzhanska_@1x.png"
-                alt="Photo Victoria Dobrzhanska"
-                width="80"
-                height="80"
-              />
-              <h3 class="review-name">Victoria Dobrzhanska</h3>
-              <p class="review-text">
-                I love this chocolate bar. Perfect combination of light crispy
-                wafer, covered in a thin layer chocolate.
-              </p>
-            </div>
-            <div class="review-item swiper-slide">
-              <img
-                class="review-img"
-                srcset="
-                  ./img/review/photo-nazar-babenko_@1x.png 1x,
-                  ./img/review/photo-nazar-babenko_@2x.png 2x
-                "
-                src="./img/review/photo-nazar-babenko_@1x.png"
-                alt="Photo Nazar Babenko"
-                width="80"
-                height="80"
-              />
-              <h3 class="review-name">Nazar Babenko</h3>
-              <p class="review-text">
-                This chocolate confection is a delight! A delight! The wafer is
-                light and crisp, the hazelnut cream is smooth, and the chocolate
-                is good.
-              </p>
-            </div>
-            <div class="review-item swiper-slide">
-              <img
-                class="review-img"
-                srcset="
-                  ./img/review/photo-olena-kampusch_@1x.png 1x,
-                  ./img/review/photo-olena-kampusch_@2x.png 2x
-                "
-                src="./img/review/photo-olena-kampusch_@1x.png"
-                alt="Photo Olena Kampusch"
-                width="80"
-                height="80"
-              />
-              <h3 class="review-name">Olena Kampusch</h3>
-              <p class="review-text">
-                Chocolate is a family favourite treat. Love the delicious smooth
-                chocolate and the creaminess inside. The wafer is soft but
-                crunchy.
-              </p>
-            </div>
-            <div class="review-item swiper-slide">
-              <img
-                class="review-img"
-                srcset="
-                  ./img/review/photo_natalia_sus_@1x.png 1x,
-                  ./img/review/photo_natalia_sus_@2x.png 2x
-                "
-                src="./img/review/photo_natalia_sus_@1x.png"
-                alt="Photo Natalia Sus"
-                width="80"
-                height="80"
-              />
-              <h3 class="review-name">Natalia Sus</h3>
-              <p class="review-text">
-                The chocolate assortment was delicious. Both dark and milk
-                chocolate pieces were smooth and just right on the sweetness
-                level.
-              </p>
-            </div>
-            <div class="review-item swiper-slide">
-              <img
-                class="review-img"
-                srcset="
-                  ./img/review/photo_danilo_nottingham_@1x.png 1x,
-                  ./img/review/photo_danilo_nottingham_@2x.png 2x
-                "
-                src="./img/review/photo_danilo_nottingham_@1x.png"
-                alt="Photo Danilo Nottingham"
-                width="80"
-                height="80"
-              />
-              <h3 class="review-name">Danilo Nottingham</h3>
-              <p class="review-text">
-                This is delicious. It so rich and flavorful you don't need to
-                use as many. I love topping an apple with almond butter and
-                these chips for a snack.
-              </p>
-            </div>
-            <div class="review-item swiper-slide">
-              <img
-                class="review-img"
-                srcset="
-                  ./img/review/photo_irina_tydnyuk_@1x.png 1x,
-                  ./img/review/photo_irina_tydnyuk_@2x.png 2x
-                "
-                src="./img/review/photo_irina_tydnyuk_@1x.png"
-                alt="Photo Irina Tydnyuk"
-                width="80"
-                height="80"
-              />
-              <h3 class="review-name">Irina Tydnyuk</h3>
-              <p class="review-text">
-                This is simply the best chocolate around, and I'm just thrilled
-                to support a local company! Best local chocolate - world class
-                :&rpar;
-              </p>
-            </div>
-          </div>
-
-          <div class="swiper-pagination swiper-wrapper-pagination">
-            <span
-              class="swiper-pagination-bullet swiper-pagination-bullet-active"
-            ></span>
-            <span class="swiper-pagination-bullet"></span>
-            <span class="swiper-pagination-bullet"></span>
-            <span class="swiper-pagination-bullet"></span>
-            <span class="swiper-pagination-bullet"></span>
-            <span class="swiper-pagination-bullet"></span>
-          </div>
-        </div>
-
-        <button type="button" class="review-btn" data-modal-open>
-          Leave a review
-        </button>
-      </div>
-    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./js/swiper-review.js"></script>

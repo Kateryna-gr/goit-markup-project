@@ -180,7 +180,7 @@ body {
 
 .review-item {
   position: relative;
-  width: 335px;
+  /* width: 335px; */
   height: 200px;
 
   /* background: var(--acent-text-color); */
@@ -190,29 +190,29 @@ body {
   border-radius: 15px;
 }
 
-@media only screen and (max-width: 767px) {
+/* @media only screen and (max-width: 767px) {
   .review-item:nth-child(n + 2) {
     display: none;
   }
-}
+} */
 
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
   .review-item {
     width: 344px;
   }
-}
+} */
 
-@media only screen and (max-width: 1199px) {
+/* @media only screen and (max-width: 1199px) {
   .review-item:nth-child(n + 3) {
     display: none;
   }
-}
+} */
 
-@media only screen and (min-width: 1200px) {
+/* @media only screen and (min-width: 1200px) {
   .review-item {
     width: 360px;
   }
-}
+} */
 
 /* .review-block {
   position: absolute;
@@ -273,8 +273,7 @@ body {
 
   color: var(--secondary-text-color);
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -408,8 +407,7 @@ body {
   stroke: var(--secondary-text-color);
   border-radius: 50%;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-icon:focus,
@@ -661,8 +659,7 @@ body {
 
   color: var(--primary-text-color);
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media only screen and (min-width: 768px) {
@@ -686,15 +683,34 @@ body {
   padding-top: 42px;
   width: 335px;
 }
+
 @media only screen and (min-width: 768px) {
   .swiper {
-    width: 704px;
+    width: 706px;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .swiper {
-    width: 1136px;
+    width: 1138px;
+  }
+}
+
+.swiper-slide {
+  /* position: relative; */
+  width: 335px;
+  /* height: 200px; */
+}
+
+@media only screen and (min-width: 768px) {
+  .swiper-slide {
+    width: 344px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .swiper-slide {
+    width: 360px;
   }
 }
 

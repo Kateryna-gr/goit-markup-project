@@ -695,13 +695,13 @@ body {
 
 @media only screen and (min-width: 768px) {
   .swiper {
-    width: 704px;
+    width: 706px;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .swiper {
-    width: 1136px;
+    width: 1138px;
   }
 }
 
